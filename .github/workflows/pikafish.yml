@@ -7,12 +7,12 @@ on:
 
 jobs:
   Pikafish-x86-64:
-    name: ${{ matrix.config.name }}-x86-64-universal
+    name: ${{ matrix.config.name }}-x86-64-bmi2
     runs-on: ${{ matrix.config.os }}
     env:
-      ARCH: x86-64-universal
+      ARCH: x86-64-bmi2
       COMP: clang
-      EXE: Pikafish-${{ matrix.config.name }}-x86-64-universal${{ matrix.config.ext }}
+      EXE: Pikafish-${{ matrix.config.name }}-x86-64-bmi2${{ matrix.config.ext }}
     strategy:
       matrix:
         config:
